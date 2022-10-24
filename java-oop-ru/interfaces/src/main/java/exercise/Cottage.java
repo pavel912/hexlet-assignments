@@ -15,6 +15,7 @@ public class Cottage implements Home {
 		return area;
 	}
 
+	@Override
 	public String toString() {
 		return String.format("%d этажный коттедж площадью %f метров", floorCount, area);
 	}
