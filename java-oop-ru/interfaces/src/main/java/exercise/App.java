@@ -10,7 +10,7 @@ public class App {
 		return appartments
 			.stream()
 			.sorted(Comparator.comparingDouble(Home::getArea))
-			.limit(3)
+			.limit(n)
 			.map(home -> home.toString())
 			.toList();
 	}
