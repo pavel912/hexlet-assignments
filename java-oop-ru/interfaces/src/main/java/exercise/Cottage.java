@@ -1,7 +1,7 @@
 package exercise;
 
 // BEGIN
-public class Cottage {
+public class Cottage implements Home {
 	private double area;
 	private int floorCount;
 
@@ -15,7 +15,6 @@ public class Cottage {
 		return area;
 	}
 
-	@Override
 	public String toString() {
 		return String.format("%d этажный коттедж площадью %f метров", floorCount, area);
 	}
