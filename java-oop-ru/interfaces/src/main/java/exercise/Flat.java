@@ -19,7 +19,7 @@ public class Flat implements Home {
 
 	@Override
 	public String toString() {
-		return String.format("Квартира площадью %f метров на %d этаже", getArea(), floor);
+		return String.format("Квартира площадью %f.1 метров на %d этаже", getArea(), floor);
 	}
 
 	@Override
