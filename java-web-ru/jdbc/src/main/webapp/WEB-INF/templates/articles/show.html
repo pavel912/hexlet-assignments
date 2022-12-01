@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorate="~{layouts/application.html}">
+
+<head>
+  <title>Show article</title>
+</head>
+<section layout:fragment="content">
+  <!-- BEGIN -->
+  <table class="table">
+    <thead>
+    <th>ID</th>
+    <th>Название</th>
+    <th>Текст</th>
+    </thead>
+    <tbody>
+    <tr>
+      <td th:text="${article.getId()}"></td>
+      <td th:text="${article.getTitle()}"></td>
+      <td th:text="${article.getBody()}"></td>
+    </tr>
+  </table>
+  <!-- END -->
+</section>
